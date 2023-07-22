@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Energy Performance Data</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Energy Performance Data</h1>
+  </header>
+  
+  <main>
+    <form id="addressForm">
+      <label for="addressInput">Enter Address or Postcode:</label>
+      <input type="text" id="addressInput" required>
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="resultsContainer"></div>
+
+    <div id="pagination">
+      <button id="prevPageButton" disabled>Previous Page</button>
+      <button id="nextPageButton" disabled>Next Page</button>
+    </div>
+
+    <div id="analysisContainer"></div>
+
+    <div id="detailsContainer"></div>
+
+    <button id="backToTopBtn" onclick="scrollToTop()" aria-label="Back to Top" title="Back to Top">↑</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
